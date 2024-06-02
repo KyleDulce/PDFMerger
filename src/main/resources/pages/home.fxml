@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="459.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.kyledulce.pdfmerger.window.controllers.FileSelectController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PDF Editor" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="102.0" prefWidth="600.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Files Selected" />
+                  <TextArea prefHeight="78.0" prefWidth="541.0" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d4d4d4;">
+               <children>
+                  <VBox alignment="CENTER" onDragOver="#onFileAreaDrag" prefHeight="200.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <FontIcon iconLiteral="mdral-cloud_upload" iconSize="32" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a file or drag it here" />
+                     <Button mnemonicParsing="false" text="Choose File" />
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Button mnemonicParsing="false" text="Edit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
